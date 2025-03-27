@@ -122,7 +122,7 @@ function handleCardClick(e) {
   // Calculate scale to fill screen
   const scaleX = window.innerWidth / startWidth;
   const scaleY = window.innerHeight / startHeight;
-  const scale = Math.max(scaleX, scaleY) * 1.2; // Slightly larger to ensure full coverage
+  const scale = Math.max(scaleX, scaleY) * 1.1; // Slightly larger to ensure full coverage
   
   // Clone the card for animation
   const clone = card.cloneNode(true);
@@ -169,7 +169,7 @@ function animateCardExpansion(clone, startX, startY, endX, endY, scale, link) {
   // Step 2: Move to center with a slight scale
   setTimeout(() => {
     clone.style.transition = `transform ${moveToMiddleDuration}ms cubic-bezier(0.34, 1.56, 0.64, 1)`;
-    clone.style.transform = `translate(${endX - startX}px, ${endY - startY}px) scale(1.1)`;
+    clone.style.transform = `translate(${endX - startX}px, ${endY - startY}px) scale(1)`;
     
     // Step 3: Scale to fill screen with a smooth transition
     setTimeout(() => {
