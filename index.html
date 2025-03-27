@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolBox - Tool Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/">ToolBox</a>
+        </div>
+        <nav class="nav">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="/about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <h1>Tool Library</h1>
+        <p>A collection of useful web tools to help with your everyday tasks. Click on any tool to start using it.</p>
+      </section>
+
+      <section class="tools-grid" id="tools-grid">
+        <!-- Tools will be inserted here by JavaScript -->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; <span id="current-year"></span> ToolBox. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="/terms">Terms</a>
+          <a href="/privacy">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Overlay for the animation -->
+  <div id="animation-overlay" class="animation-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
